@@ -1,10 +1,10 @@
 {
-    "01" : {
-        "achievement_name": "dkjsfhdkjsf",
-        "status": false
+    "Pikachu" : {
+        "id": 25,
+        "type_1": "ELECTRIC"
     },
-    "02" : {
-        "achievement_name": "dkjfhsjkdfnmdcv",
-        "status": true
+    "Absol" : {
+        "id": 359,
+        "type_1": "DARK"
     }
 }

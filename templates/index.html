@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="page-content">
+
+        <div>
+            <h1>Favorite Pokemon</h1>
+            <p> {{ trainer }}'s Team </p>
+        </div>
+
+        <div class="poke-team">
+            {% for key, value in data.items() %}
+                <div class="poke-entry">
+                    <span class="poke-name"> {{ key }} </span>
+                    <span class="poke-id"> {{ value.id }} </span>
+                    <span class="poke-type"> {{ value.type_1 }} </span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+</body>
+
+</html>
