@@ -7,13 +7,22 @@ app = Flask(__name__)
 # Homepage route
 @app.route("/")
 def index():
-    # Declare variables to hold data
-    trainer_name = 'Katerina'
-    # Pull data from a JSON file
+    # Use Python variables to hold data
+    pokemon_generation = 1
+    # Render index page & pass in data
+    return render_template('index.html', generation=pokemon_generation)
+
+# Function to handle form submission
+# the app.route decorate maps to the submit button
+@app.route("/submit", methods=['POST'])
+def submit():
+    # Get data from HTML form input
+    selected_type = request.form.get('type')
+    # Read data from a JSON file
     with open('static/data.json', 'r') as file:
         data_dict = json.load(file)
-    # Render index page & pass in data
-    return render_template('index.html', trainer=trainer_name, data=data_dict)
+    # Pass data into results page
+    return render_template("results.html", type=selected_type, data=data_dict)
 
 # RUN THE APP (or type flask run in terminal)
 if __name__ == "__main__":

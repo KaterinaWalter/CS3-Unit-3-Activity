@@ -11,18 +11,20 @@
     <div class="page-content">
 
         <div class="page-header">
-            <h1>Pokemon Type Selector</h1>
-            <p> {{ trainer }}'s Team </p>
+            <h1>Pokemon Type Lookup Tool</h1>
+            <p> <strong>TYPE:</strong> {{ type }} </p>
         </div>
 
         <div class="poke-team">
             {% for key, value in data.items() %}
+                {% if value.type_1 == type or value.type_2 == type %}
                 <div class="poke-entry">
                     <img src="{{ value.img_url }}" width="50px">
                     <span class="poke-name"> {{ value.name }} </span>
                     <span class="poke-type-1"> {{ value.type_1 }} </span>
                     <span class="poke-type-2"> {{ value.type_2 }} </span>
                 </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>
