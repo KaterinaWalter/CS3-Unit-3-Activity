@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+
+:root {
+    --NORMAL: #a8a878;
+    --FIRE: orange;
+    --FIGHTING: #c03028;
+    --WATER: #6890f0;
+    --POISON: #a040a0;
+    --ELECTRIC: #f8d030;
+    --GROUND: #e0c068;
+    --GRASS: #78c850;
+    --FLYING: #a890f0;
+    --ICE: #98d8d8;
+    --BUG: #a8b820;
+    --PSYCHIC: #f85888;
+    --ROCK: #b8a038;
+    --DRAGON: #7038f8;
+    --GHOST: #705898;
+    --DARK: #705848;
+    --STEEL: #b8b8d0;
+    --FAIRY: #ffb7fa;
+}
+
+button {
+	font-family: "Roboto Condensed";
+	font-size: 12px;
+	border: 1px solid grey;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+	color: white;
+	overflow: hidden;
+	text-shadow: 0em 0em 0.2em black;
+	position: relative;
+	top: -8px;
+}
+button.NORMAL {
+	background-color: var(--NORMAL);
+}
+button.FIRE {
+	background-color: var(--FIRE);
+}
+button.FIGHTING {
+	background-color: var(--FIGHTING);
+}
+button.WATER {
+	background-color: var(--WATER);
+}
+button.POISON {
+	background-color: var(--POISON);
+}
+button.ELECTRIC {
+	background-color: var(--ELECTRIC);
+}
+button.GROUND {
+	background-color: var(--GROUND);
+}
+button.GRASS {
+	background-color: var(--GRASS);
+}
+button.FLYING {
+	background-color: var(--FLYING);
+}
+button.ICE {
+	background-color: var(--ICE);
+}
+button.BUG {
+	background-color: var(--BUG);
+}
+button.PSYCHIC {
+	background-color: var(--PSYCHIC);
+}
+button.ROCK {
+	background-color: var(--ROCK);
+}
+button.DRAGON {
+	background-color: var(--DRAGON);
+}
+button.GHOST {
+	background-color: var(--GHOST);
+}
+button.DARK {
+	background-color: var(--DARK);
+}
+button.STEEL {
+	background-color: var(--STEEL);
+}
+button.FAIRY {
+	background-color: var(--FAIRY);
+}
+button.NONE {
+	display: none;
+	width: 0px;
+}
+
+html {
+	min-height: 100%;
+}
+body {
+	width: 100%;
+	background: url("https://assets.codepen.io/8273734/pokemon-1660577037390-4515.jpg");
+	background-size: cover;
+	font-family: Poppins, sans-serif;
+	color:black;
+}
+hr {
+	background: none;
+	border-top: 10px dotted #ff3d5a;
+}
+h1 {
+    font-family: "Righteous";
+    font-size: 1.5em;
+    color: grey;
+}
+.page-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}

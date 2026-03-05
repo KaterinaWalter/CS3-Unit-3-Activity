@@ -12,7 +12,8 @@
 
         <div class="page-header">
             <h1>Pokemon Type Lookup Tool</h1>
-            <p> <strong>TYPE:</strong> {{ type }} </p>
+            <a href="{{ url_for('index') }}"><button>⬅ BACK</button></a>
+            <p>Here are the options:</p>
         </div>
 
         <div class="poke-team">
@@ -21,8 +22,10 @@
                 <div class="poke-entry">
                     <img src="{{ value.img_url }}" width="50px">
                     <span class="poke-name"> {{ value.name }} </span>
-                    <span class="poke-type-1"> {{ value.type_1 }} </span>
-                    <span class="poke-type-2"> {{ value.type_2 }} </span>
+                    <button class=" {{ value.type_1 }} "> {{ value.type_1 }} </button>
+                    {% if value.type_2 %}
+                    <button class=" {{ value.type_2 }} "> {{ value.type_2 }} </button>
+                    {% endif %}
                 </div>
                 {% endif %}
             {% endfor %}
